@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPG</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="container-main bg-dark">
+
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+            <!-- need to work on how to insert a scalable image in to the nav bar. This solution works for now but when screen changes the icon remains the same size and would like to have some flexibiilty on how it behaves with different screen sizes -->
+            <img src="images/PWsymbol.png" class="img-fluid" width="20px" class="nav-link disabled" alt="plabeswalker symbol used in Magic the Gathering">
+          <a class="navbar-brand nav-link disabled" href="#">PPG</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              
+              <!-- Commenting out the dropdown as it is not is use for now will be enabled in future versions and used for navigation -->
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+      
+    <div class="container bg-light">
+        <div class="pt-5">
+            <h2>Power up your Play! <span class="badge bg-dark">New</span></h2>
+            <form>
+                <div class="row mb-4">
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="FirstName" class="form-control">
+                      <label class="form-label" for="FirstName">First name</label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="LastName" class="form-control">
+                      <label class="form-label" for="LastName">Last name</label>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="form-outline mb-4">
+                  <input type="email" id="email" class="form-control">
+                  <label class="form-label" for="email">Email address</label>
+                </div>
+                            
+                <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Subcribe to the Monthly Newsletter
+                    </label>
+                </div>
+              
+                <button type="submit" class="btn btn-dark btn-block mb-4">Sign up</button>
+            </form>
+        </div>
+        
+        <!-- need to work on cropping the image, wanted to create a uniform appearance without haveing to edit the photos, got close but did not excute it exactly -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="images/Ajani-Art.jpg" class="img-fluid" alt="White Planeswalker">
+                </div>
+                <div class="col">
+                    <img src="images/JaceArt.jpg" class="img-fluid" alt="Blue Planeswalker">
+                </div>
+                <div class="col">
+                    <img src="images/LilianaArt.jpg" class="img-fluid" alt="Black Planeswalker">
+                </div>
+                <div class="col">
+                    <img src="images/ChandraArt.jpg" class="img-fluid" alt="Red Planeswalker">
+                </div>
+                <div class="col">
+                    <img src="images/GarrukArt.jpg" class="img-fluid" alt="Green Planeswalker">
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <h2 class="text-center fw-bold">
+                Visit Us!
+            </h2>
+            <P class="text-center">
+                123 Planewalker Drive <br>
+                San Diego, Ca 92110
+            </P>
+        </div>
+        
+        <footer class="text-center">-Power Play Gamez est.2023-</footer>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPG</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="container-main bg-dark">
+
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+            <!-- need to work on how to insert a scalable image in to the nav bar. This solution works for now but when screen changes the icon remains the same size and would like to have some flexibiilty on how it behaves with different screen sizes -->
+            <img src="images/PWsymbol.png" class="img-fluid" width="20px" class="nav-link disabled" alt="plabeswalker symbol used in Magic the Gathering">
+          <a class="navbar-brand nav-link disabled" href="#">PPG</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              
+              <!-- Commenting out the dropdown as it is not is use for now will be enabled in future versions and used for navigation -->
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container bg-light">
+        <h1 class="text-start">Power Play Gamez</h1>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam omnis, deleniti neque officiis excepturi id hic itaque provident distinctio magni ratione laboriosam consectetur nam nobis aspernatur qui. Nisi, in amet.
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quis blanditiis inventore provident qui voluptates. Consectetur perspiciatis, expedita aut saepe sapiente architecto reiciendis vitae nostrum neque doloribus, sint quidem labore.
+            </p>
+            <!-- having trouble with the table sizing when the table is very small -->
+            <div class="container-fluid">
+                <table class="table table-dark table-hover">
+                    <thead>
+                        <th colspan="5" class="text-center">
+                            Mana Symbols
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>White</th>
+                            <th>Blue</th>
+                            <th>Black</th>
+                            <th>Red</th>
+                            <th>Green</th>
+                        </tr>
+                        <tr>
+                            <td><img src="images/White.png" class="img-fluid" width="50px" alt="White Mana Symbol"></td>
+                            <td><img src="images/Blue.png" class="img-fluid" width="50px" alt="Blue Mana Symbol"></td>
+                            <td><img src="images/Black.png" class="img-fluid" width="50px" alt="Black Mana Symbol"></td>
+                            <td><img src="images/Red.png" class="img-fluid" width="50px" alt="Red Mana Symbol"></td>
+                            <td><img src="images/Green.png" class="img-fluid" width="50px" alt="Green Mana Symbol"></td>
+                        </tr>
+                            <td>
+                                
+                            </td>
+                            <td>
+                                
+                            </td>
+                            <td>
+                                
+                            </td>
+                            <td>
+                                
+                            </td>
+                            <td>
+                                
+                            </td>
+                        <tr>
+    
+                        </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="card" style="width: 16rem;">
+                        <img src="images/WhiteCard.jpg" class="card-img-top" alt="Exmaple of a White Card">
+                        <div class="card-body">
+                        <h5 class="card-title">A Tale for the Ages</h5>
+                        <p class="card-text text-end fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non dolorem, minima minus eum sapiente vero tenetur itaque blanditiis asperiores.</p>
+                        <a href="https://www.tcgplayer.com/search/magic/product?productLineName=magic&q=A+Tale+for+the+Ages&view=grid" class="btn btn-dark">Get your own!</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 16rem;">
+                        <img src="images/BlueCard.jpg" class="card-img-top" alt="Example of a Blue Card">
+                        <div class="card-body">
+                        <h5 class="card-title">Arakocra Sneak</h5>
+                        <p class="card-text text-end fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non dolorem, minima minus eum sapiente vero tenetur itaque blanditiis asperiores.</p>
+                        <a href="https://www.tcgplayer.com/search/magic/product?productLineName=magic&q=Arakocra+sneak&view=grid" class="btn btn-dark ">Get your own!</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 16rem;">
+                        <img src="images/BlackCard.jpg" class="card-img-top" alt="Example of a Black Card">
+                        <div class="card-body">
+                        <h5 class="card-title">Abhorrent Overlord</h5>
+                        <p class="card-text text-end fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non dolorem, minima minus eum sapiente vero tenetur itaque blanditiis asperiores.</p>
+                        <a href="https://www.tcgplayer.com/search/magic/product?productLineName=magic&productName=Abhorrent+Overlord&view=grid" class="btn btn-dark">Get your own!</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 16rem;">
+                        <img src="images/RedCard.jpg" class="card-img-top" alt="Exmaple of a Red Card">
+                        <div class="card-body">
+                        <h5 class="card-title">Abrade</h5>
+                        <p class="card-text text-end fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non dolorem, minima minus eum sapiente vero tenetur itaque blanditiis asperiores.</p>
+                        <a href="https://www.tcgplayer.com/search/magic/product?productLineName=magic&productName=Abrade&view=grid" class="btn btn-dark">Get your own!</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 16rem;">
+                        <img src="images/GreenCard.jpg" class="card-img-top" alt="Example of a Green Card">
+                        <div class="card-body">
+                        <h5 class="card-title">Abundance</h5>
+                        <p class="card-text text-end fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non dolorem, minima minus eum sapiente vero tenetur itaque blanditiis asperiores.</p>
+                        <a href="https://www.tcgplayer.com/search/magic/product?productLineName=magic&productName=Abundance&view=grid" class="btn btn-dark">Get your own!</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            
+        </div>
+
+        <footer class="text-center">-Power Play Gamez est.2023-</footer>
+    </div>
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
